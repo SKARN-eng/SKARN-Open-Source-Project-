@@ -1,7 +1,10 @@
 Project SKARN or Shared Knowledge of Adaptable Research Nodes is an open source initiative to provide everyone with the means to make powerful and affordable HPC/ AI Workstations. 
-This project intends to reverse engineer, document, distribute, and harness the Home Lab community to adapt existing Enterprise hardware. One of the biggest pitfalls 
-of designing systems for HPC or AI Hosting is the overlooking of available Enterprise solutions that outperform commercial alternatives. Specifically the use of commercially 
-available Nvidia and AMD video cards for scientific compute and AI Hosting rather than proper NVLink typologies. This project will attempt to reverse engineer existing Nvidia SXM based hardware and serve as a documentation hub for future developers and contributors. Existing open source adapter designs developed will be shared on this repository, also included will be the URL to the original contributor and design page. 
+This project intends to reverse engineer, document,and adapt existing Enterprise hardware.
+
+One of the biggest pitfalls of designing systems for HPC or AI Hosting is the overlooking of available Enterprise solutions that outperform commercial alternatives. Specifically the use of commercially 
+available Nvidia and AMD video cards for scientific compute and AI Hosting rather than proper NVLink typologies. 
+The commercial systems are also known as "Quad 4090TI Ultra AI LLM Monster 9000" or other variations of systems that can't effectively unify their Video Memory due to PCIE limitations or slow non-HBM2+ memory bandwidth. 
+This project will attempt to reverse engineer existing Nvidia SXM based hardware and serve as a documentation hub for future developers and contributors. Existing open source adapter designs developed will be shared on this repository, also included will be the URL to the original contributor and design page. The intention is to credit existing solutions and their contributors, provide clear documentation of solutions, and bringing this information to mainstream rather than gate-keeping in lesser known repositories and forums. 
 
 
 
