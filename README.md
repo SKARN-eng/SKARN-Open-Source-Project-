@@ -3,7 +3,7 @@ This project intends to reverse engineer, document,and adapt existing Enterprise
 
 One of the biggest pitfalls of designing systems for HPC or AI Hosting is the overlooking of available Enterprise solutions that outperform commercial alternatives. Specifically the use of commercially 
 available Nvidia and AMD video cards for scientific compute and AI Hosting rather than proper NVLink typologies. 
-The commercial systems are also known as "Quad 4090TI Ultra AI LLM Monster 9000" or other variations of systems that can't effectively unify their Video Memory due to PCIE limitations or slow non-HBM2+ memory bandwidth. 
+The commercial systems in question are also known as "Quad 5090 Ultra AI LLM Monster 9000" or other variations that can't effectively unify their Video Memory due to PCIE limitations and lack of Nvidia NVLink or AMD Infini Band support. 
 This project will attempt to reverse engineer existing Nvidia SXM based hardware and serve as a documentation hub for future developers and contributors. Existing open source adapter designs developed will be shared on this repository, also included will be the URL to the original contributor and design page. The intention is to credit existing solutions and their contributors, provide clear documentation of solutions, and bringing this information to mainstream rather than gate-keeping in lesser known repositories and forums. 
 
 
