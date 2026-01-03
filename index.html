@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKARN Research Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #e0e0e0;
+            background: linear-gradient(135deg, #0a0e27 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            margin-bottom: 50px;
+        }
+
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+            filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 30px rgba(255, 154, 86, 0.5));
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: 300;
+            background: linear-gradient(135deg, #ff9a56, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: 15px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #00d9ff;
+            letter-spacing: 5px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .intro {
+            font-size: 1.15em;
+            line-height: 2;
+            color: #b8b8b8;
+            margin: 50px 0;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 4px solid #ff9a56;
+        }
+
+        h2 {
+            color: #ff9a56;
+            font-size: 2em;
+            margin: 50px 0 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #00d9ff;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .projects-list {
+            margin: 30px 0 60px;
+        }
+
+        .project-item {
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 3px solid #00d9ff;
+            padding: 20px 25px;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .project-item:hover {
+            background: rgba(0, 217, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        .project-title {
+            color: #00d9ff;
+            font-size: 1.3em;
+            margin-bottom: 8px;
+        }
+
+        .project-desc {
+            color: #b0b0b0;
+            font-size: 1em;
+        }
+
+        .nav-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 60px 0;
+        }
+
+        .nav-btn {
+            display: block;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(255, 154, 86, 0.1), rgba(0, 217, 255, 0.1));
+            border: 2px solid #00d9ff;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #00d9ff;
+            font-size: 1.2em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-btn:hover {
+            background: linear-gradient(135deg, rgba(255, 154, 86, 0.2), rgba(0, 217, 255, 0.2));
+            border-color: #ff9a56;
+            color: #ff9a56;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(0, 217, 255, 0.3);
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .license {
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="skarn-logo.png" alt="SKARN Logo" class="logo">
+            </div>
+            <h1>SKARN</h1>
+            <div class="subtitle">SHARED KNOWLEDGE OF ADVANCED RESEARCH NODES</div>
+        </header>
+
+        <div class="intro">
+            The SKARN project is an open-source research initiative focused on making enterprise-grade GPU computing accessible through reverse engineering, custom adapter design, and comprehensive documentation. We develop hardware solutions that enable researchers to deploy NVLink-capable GPU clusters at a fraction of traditional costs.
+            <br><br>
+            All designs, schematics, and documentation are released under the CERN Open Hardware Licence (CERN-OHL-P), ensuring free access to cutting-edge compute infrastructure for the research community.
+        </div>
+
+        <h2>Current Project Initiatives</h2>
+
+        <div class="projects-list">
+            <div class="project-item">
+                <div class="project-title">DGX/HGX SXM4 & SXM5 Reverse Engineering</div>
+                <div class="project-desc">Developing adjustable PCIe x1-x16 interfaces for individual A100/H100 GPUs with programmable trace length compensation for motherboard compatibility.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">HPE Apollo XL270d Platform Adaptation</div>
+                <div class="project-desc">Complete electrical characterization and standalone operation of 8× V100 SXM2 compute trays outside original chassis.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Compact High-Density Systems</div>
+                <div class="project-desc">Portable dual V100 configurations in 12×10×9" cases, quad V100 workstations, and 8× V100 rack builds with full documentation.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Custom PCB Adapter Development</div>
+                <div class="project-desc">JPCie to PCIe adapters, SFF-8654 breakout boards, and power delivery solutions for SXM2/4/5 platforms.</div>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="#" class="nav-btn">Documents</a>
+            <a href="#" class="nav-btn">Manuals</a>
+            <a href="#" class="nav-btn">Schematics & Adapters</a>
+            <a href="#" class="nav-btn">Project Video Library</a>
+            <a href="#" class="nav-btn">About Project</a>
+        </div>
+
+        <footer>
+            <div class="license">
+                <strong>SKARN Research Project</strong><br>
+                Copyright © 2026 Leonid Andrijovych Vityuk<br>
+                Licensed under CERN-OHL-P v2.0
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
